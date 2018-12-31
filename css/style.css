@@ -22,12 +22,12 @@ body {
 
 .slides-navigation a.prev {
     left: 20px;
-    background-image: url(../icons/prev.png);
+    background-image: url(../img/icons/prev.png);;
 }
 
 .slides-navigation a.next {
     right: 20px;
-    background-image: url(../icons/next.png);
+    background-image: url(../img/icons/next.png);
 }
 
 .overlay {
@@ -335,3 +335,41 @@ body {
 .copyrightSection p {
     margin: 0;
 }
+
+#navigation {
+    background-color: #2c2c54;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a{
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #e6d801;
+}
+
+#navigation li a:hover {
+    color: #e6d801;
+}
+
+.navbar-toggler-icon {
+    background: url(../img/icons/menu.png);
+    background-size: 100%;
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
+}
+
