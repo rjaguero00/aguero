@@ -3,6 +3,15 @@ $(window).on("load", function () {
     $(".loader .inner").fadeOut(750, function () {
         $(".loader").fadeOut(1000);
     });
+
+    $(".items").isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 1500,
+            easing: 'linear',
+            queue: false
+        }
+    });
 })
 
 
@@ -77,14 +86,6 @@ $(document).ready(function () {
 
     $("[data-fancybox]").fancybox();
 
-    $(".items").isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 1500,
-            easing: 'linear',
-            queue: false
-        }
-    });
 
     $("#filters a").click(function () {
         $("#filters .current").removeClass("current");
